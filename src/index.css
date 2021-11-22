@@ -1,13 +1,144 @@
+*{
+  box-sizing:border-box;
+}
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+ background-color: lightgreen;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+header{
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  /* justify-content: space-around; */
+  font-size: 70px;
+  font-weight: bold;
+  color: orange;
+  border-bottom: 30px double orange;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: white;
+}
+#imgcen{
+  width: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+main{
+  width: 100%;
+  background-color: lightgreen;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px;
+  height: 500px;
+  width: 350px;
+  background-color: green;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px black;
+  padding: 10px;
+}
+#imgcont{
+
+}
+ img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  box-shadow: -5px 10px 20px;
+  /* width: 100%; */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  height: 550px;
+  width: 350px;
+  background-color:white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px black;
+  
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#comprar{
+  width: 100%;
+  height: 50px;
+  border: none;
+  
+  box-shadow: 0px 5px 5px black;
+  background: radial-gradient(lightgreen, green );
+  color: orange;
+  font-size: x-large;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+#searchbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#busca{
+  width: 50%;
+}
+#descricao{
+  width: 90%;
+  height: 100%;
+ border-top: 2px solid orange;
+  color: orange;
+  font-weight: bold;
+  padding: 20px;
+  
+}
+
+#preco{
+  font-size: xx-large;
+  font-weight: bolder;
+  color: orange;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 500px) {
+  #imgcen{
+    width: 30%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #lojasCenoura{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  header{
+    font-size:xx-large;  
+  }
+
 }
